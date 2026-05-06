@@ -4,32 +4,36 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>About · BloomVault Farms</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--deep:#003c22;--leaf:#7ed321;--gold:#ffc83d;--silver:#dce2df;--text:#f8f4df;--muted:#b7b9a9;--line:rgba(255,200,61,.24)}*{box-sizing:border-box}body{margin:0;color:var(--text);font-family:Inter,sans-serif;line-height:1.7;background:radial-gradient(circle at 50% -10%,rgba(126,211,33,.16),transparent 34%),radial-gradient(circle at 12% 14%,rgba(255,200,61,.13),transparent 30%),linear-gradient(180deg,#06100a,#020503 74%)}.container{width:min(1000px,92vw);margin:auto}header{position:sticky;top:0;background:rgba(4,9,6,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:10}.logo-wrap{display:grid;place-items:center;padding:18px 0 10px}.logo{font-family:'Bebas Neue';color:var(--gold);font-size:4rem;letter-spacing:.08em;text-shadow:3px 4px 0 var(--deep)}nav{display:flex;justify-content:center;gap:10px;padding:0 0 14px;flex-wrap:wrap}nav a{color:var(--silver);text-decoration:none;padding:10px 14px;border-radius:999px;border:1px solid transparent;font-weight:800}nav a:hover,nav a.active{border-color:var(--line);background:linear-gradient(180deg,rgba(255,200,61,.18),rgba(0,60,34,.34))}.page{padding:60px 0}.eyebrow{color:var(--leaf);font-size:.8rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.title{font-family:'Bebas Neue';font-size:clamp(4rem,8vw,6rem);line-height:.9;color:var(--gold);margin:.12em 0;text-shadow:3px 4px 0 var(--deep),0 0 18px rgba(255,200,61,.25)}.lead,.muted{color:var(--muted)}.lead{font-size:1.12rem}.panel{border:1px solid var(--line);border-radius:26px;padding:30px;background:linear-gradient(180deg,rgba(220,226,223,.08),rgba(6,16,10,.82));box-shadow:0 24px 70px rgba(0,0,0,.35)}h2{font-family:'Bebas Neue';font-size:2.7rem;line-height:1;color:var(--gold);margin:1.2em 0 .35em}.quote{border-left:4px solid var(--gold);padding-left:18px;font-size:1.15rem;color:#fff}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.card{border:1px solid var(--line);border-radius:22px;padding:20px;background:rgba(220,226,223,.05)}footer{border-top:1px solid var(--line);padding:30px 0 80px;color:var(--muted);margin-top:40px}.legal{position:fixed;bottom:0;left:0;right:0;background:rgba(4,9,6,.94);border-top:1px solid var(--line);padding:8px 12px;text-align:center;color:var(--muted);font-size:.82rem}@media(max-width:860px){.grid{grid-template-columns:1fr}.logo{font-size:3.2rem}}
-</style>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<header><div class="container"><div class="logo-wrap"><div class="logo">BLOOMVAULT</div></div><nav><a href="index.html">Home</a><a href="seeds.html">Seeds</a><a href="journal.html">Journal</a><a class="active" href="about.html">About</a><a href="cart.html">Cart</a></nav></div></header>
+<header class="site-header"><div class="container"><div class="logo-wrap"><a href="index.html" aria-label="BloomVault Farms home"><img class="brand-logo" src="assets/img/logo-primary.svg" alt="BloomVault Farms"></a></div><nav class="main-nav"><a href="index.html">Home</a><a href="seeds.html">Seeds</a><a href="journal.html">Journal</a><a class="active" href="about.html">About</a><a href="cart.html">Cart</a></nav></div></header>
 <main class="container page">
 <div class="eyebrow">The BloomVault Philosophy</div>
-<h1 class="title">ABOUT</h1>
+<h1 class="page-title">ABOUT</h1>
 <div class="panel">
 <p class="lead">BloomVault Farms is a Virginia-based genetics project focused on preservation, terpene identity, and memorable breeding work.</p>
 <div class="quote">“The goal is not to release endless names. The goal is to create genetics people remember.”</div>
-<h2>What BloomVault Represents</h2>
+<h2 class="section-title" style="margin-top:38px">What BloomVault Represents</h2>
 <p>BloomVault was built around the idea of a genetics archive — a place where standout profiles are preserved, refined, and documented instead of lost over time.</p>
 <p>Projects are selected around strong terpene direction, recognizable identity, and long-term breeding value. Gas, skunk, sour, citrus, OG, dessert, and fuel-forward lines all play a role in shaping the future catalog.</p>
-<h2>The Direction</h2>
+<h2 class="section-title" style="margin-top:38px">The Direction</h2>
 <p>The BloomVault catalog aims to balance old-school character with modern appeal. Some projects focus on preservation. Others push into new combinations designed to stand out visually, aromatically, and structurally.</p>
-<div class="grid">
+<div class="grid two" style="margin-top:26px">
 <div class="card"><strong>Core Focus</strong><br><span class="muted">Preservation, terp identity, memorable releases, and long-term foundational breeding.</span></div>
 <div class="card"><strong>Based In</strong><br><span class="muted">Virginia, USA — building a recognizable regional breeding identity.</span></div>
 </div>
 </div>
+<section class="social-section">
+<div class="eyebrow">Join The Vault</div>
+<h2 class="section-title">CONNECT WITH BLOOMVAULT</h2>
+<p class="lead">Follow the project, catch updates, and join the community.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/bloomvault_farms?igsh=NGVncnJ1NHVtbXpz&utm_source=qr" target="_blank" rel="noopener"><span class="social-icon-wrap"><img src="assets/icons/instagram-black.svg" alt="Instagram"></span><span>Instagram</span></a>
+<a href="https://discord.gg/j6gGDJBfR" target="_blank" rel="noopener"><span class="social-icon-wrap"><img src="assets/icons/discord-black.svg" alt="Discord"></span><span>Discord</span></a>
+</div>
+</section>
 </main>
-<footer><div class="container">BloomVault Farms — rare genetics archive and breeding project.</div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
+<footer class="site-footer"><div class="container footer-inner"><img class="footer-logo" src="assets/img/logo-secondary.svg" alt="BloomVault Farms"><p>BloomVault Farms — rare genetics archive and breeding project.</p></div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
 </body>
 </html>
