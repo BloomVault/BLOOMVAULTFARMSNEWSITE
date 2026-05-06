@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloomVault Farms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#06100a;
+      --panel:#101a13;
+      --deep:#003c22;
+      --leaf:#7ed321;
+      --gold:#ffc83d;
+      --gold2:#b77710;
+      --silver:#dce2df;
+      --text:#f8f4df;
+      --muted:#b7b9a9;
+      --line:rgba(255,200,61,.24);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:
+      radial-gradient(circle at 50% -10%,rgba(126,211,33,.16),transparent 34%),
+      radial-gradient(circle at 12% 14%,rgba(255,200,61,.13),transparent 30%),
+      linear-gradient(180deg,#06100a,#020503 74%);
+      color:var(--text);
+      font-family:Inter,sans-serif;
+    }
+    .container{width:min(1120px,92vw);margin:auto}
+    header{
+      position:sticky;
+      top:0;
+      background:rgba(4,9,6,.9);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+      z-index:10;
+    }
+    .logo-wrap{display:grid;place-items:center;padding:18px 0 10px}
+    .logo{
+      font-family:'Bebas Neue',sans-serif;
+      color:var(--gold);
+      font-size:4rem;
+      letter-spacing:.08em;
+      text-shadow:3px 4px 0 var(--deep);
+    }
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      padding:0 0 14px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:var(--silver);
+      text-decoration:none;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-weight:800;
+    }
+    nav a:hover{
+      border-color:var(--line);
+      background:linear-gradient(180deg,rgba(255,200,61,.18),rgba(0,60,34,.34));
+    }
+    .hero{
+      padding:90px 0;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:40px;
+      align-items:center;
+    }
+    .eyebrow{
+      color:var(--leaf);
+      font-size:.8rem;
+      font-weight:900;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    h1{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:clamp(4rem,8vw,7rem);
+      line-height:.9;
+      color:var(--gold);
+      margin:.15em 0;
+      text-shadow:3px 4px 0 var(--deep),0 0 18px rgba(255,200,61,.25);
+    }
+    .lead{
+      color:var(--muted);
+      font-size:1.1rem;
+      max-width:650px;
+    }
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius:999px;
+      padding:13px 20px;
+      font-weight:900;
+      border:1px solid var(--line);
+      color:#fff;
+      background:linear-gradient(180deg,rgba(220,226,223,.12),rgba(0,60,34,.3));
+    }
+    .btn.primary{
+      background:linear-gradient(180deg,var(--gold),var(--gold2));
+      color:#06100a;
+      border:none;
+    }
+    .vault{
+      border:1px solid var(--line);
+      border-radius:26px;
+      padding:22px;
+      background:linear-gradient(180deg,rgba(220,226,223,.08),rgba(6,16,10,.82));
+    }
+    .vault-inner{
+      min-height:360px;
+      border-radius:20px;
+      border:1px solid rgba(220,226,223,.22);
+      display:grid;
+      place-items:center;
+      text-align:center;
+      background:
+      radial-gradient(circle at 50% 30%,rgba(220,226,223,.34),transparent 24%),
+      linear-gradient(135deg,#25322e,#07100b);
+      position:relative;
+      overflow:hidden;
+    }
+    .vault-inner:before{
+      content:'';
+      position:absolute;
+      inset:18px;
+      border:2px solid rgba(255,200,61,.2);
+      border-radius:18px;
+    }
+    .vault-inner strong{
+      position:relative;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:3.5rem;
+      line-height:.9;
+      color:var(--silver);
+      text-shadow:2px 3px 0 var(--deep);
+    }
+    section{padding:30px 0 60px}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+      background:linear-gradient(180deg,rgba(220,226,223,.08),rgba(6,16,10,.82));
+    }
+    .card-art{
+      aspect-ratio:4/3;
+      display:grid;
+      place-items:center;
+      background:
+      radial-gradient(circle at 44% 26%,rgba(126,211,33,.24),transparent 25%),
+      linear-gradient(135deg,#213128,#07100b);
+      color:rgba(220,226,223,.25);
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2.6rem;
+    }
+    .card-body{padding:18px}
+    .card h3{
+      margin:0 0 10px;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2rem;
+      line-height:1;
+    }
+    .badge{
+      display:inline-flex;
+      padding:4px 9px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--gold);
+      font-size:.78rem;
+      font-weight:900;
+      margin:2px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:30px 0 80px;
+      color:var(--muted);
+      margin-top:50px;
+    }
+    .legal{
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      background:rgba(4,9,6,.94);
+      border-top:1px solid var(--line);
+      padding:8px 12px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.82rem;
+    }
+    @media(max-width:860px){
+      .hero,.cards{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-wrap">
+        <div class="logo">BLOOMVAULT</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="seeds.html">Seeds</a>
+        <a href="journal.html">Journal</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Rare Genetics Archive</div>
+        <h1>WELCOME TO THE VAULT</h1>
+        <p class="lead">
+          Premium collector-focused genetics built around preservation, terpene identity, and standout breeding projects.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="seeds.html">Explore Seeds</a>
+          <a class="btn" href="journal.html">Vault Journal</a>
+        </div>
+      </div>
+
+      <div class="vault">
+        <div class="vault-inner">
+          <strong>GENETICS<br>ARCHIVE</strong>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cards">
+        <article class="card">
+          <div class="card-art">TK</div>
+          <div class="card-body">
+            <h3>Triangle Kush Projects</h3>
+            <div>
+              <span class="badge">OG</span>
+              <span class="badge">Gas</span>
+              <span class="badge">Vault Series</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-art">AJSD</div>
+          <div class="card-body">
+            <h3>AJ Sour Diesel</h3>
+            <div>
+              <span class="badge">Diesel</span>
+              <span class="badge">Chem</span>
+              <span class="badge">Preservation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-art">RKS</div>
+          <div class="card-body">
+            <h3>Skunk Preservation</h3>
+            <div>
+              <span class="badge">Skunk</span>
+              <span class="badge">Funk</span>
+              <span class="badge">Archive</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      BloomVault Farms — Virginia based genetics preservation and breeding.
+    </div>
+  </footer>
+
+  <div class="legal">
+    For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.
+  </div>
+</body>
+</html>
