@@ -4,42 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journal · BloomVault Farms</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root{--deep:#003c22;--leaf:#7ed321;--gold:#ffc83d;--gold2:#b77710;--silver:#dce2df;--text:#f8f4df;--muted:#b7b9a9;--line:rgba(255,200,61,.24)}*{box-sizing:border-box}body{margin:0;color:var(--text);font-family:Inter,sans-serif;line-height:1.6;background:radial-gradient(circle at 50% -10%,rgba(126,211,33,.16),transparent 34%),radial-gradient(circle at 12% 14%,rgba(255,200,61,.13),transparent 30%),linear-gradient(180deg,#06100a,#020503 74%)}.container{width:min(1120px,92vw);margin:auto}header{position:sticky;top:0;background:rgba(4,9,6,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:10}.logo-wrap{display:grid;place-items:center;padding:18px 0 10px}.logo{font-family:'Bebas Neue';color:var(--gold);font-size:4rem;letter-spacing:.08em;text-shadow:3px 4px 0 var(--deep)}nav{display:flex;justify-content:center;gap:10px;padding:0 0 14px;flex-wrap:wrap}nav a{color:var(--silver);text-decoration:none;padding:10px 14px;border-radius:999px;border:1px solid transparent;font-weight:800}nav a:hover,nav a.active{border-color:var(--line);background:linear-gradient(180deg,rgba(255,200,61,.18),rgba(0,60,34,.34))}.page{padding:60px 0}.eyebrow{color:var(--leaf);font-size:.8rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.page-title{font-family:'Bebas Neue';font-size:clamp(4rem,8vw,6rem);line-height:.9;color:var(--gold);margin:.12em 0;text-shadow:3px 4px 0 var(--deep),0 0 18px rgba(255,200,61,.25)}.lead,.muted{color:var(--muted)}.lead{font-size:1.1rem;max-width:760px}.grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;margin-top:34px}.post,.side-card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(220,226,223,.08),rgba(6,16,10,.82));box-shadow:0 24px 70px rgba(0,0,0,.35);padding:24px}.post h2,.side-card h2{font-family:'Bebas Neue';font-size:2.8rem;line-height:1;margin:.1em 0;color:var(--gold)}.post h3{color:var(--gold);margin-top:28px}.stamp{display:inline-flex;border:1px solid var(--line);border-radius:999px;color:var(--gold);background:rgba(255,200,61,.08);padding:5px 10px;font-size:.78rem;font-weight:900}.list{display:grid;gap:14px}.mini{border-top:1px solid var(--line);padding-top:14px}.mini:first-child{border-top:0;padding-top:0}.mini strong{color:#fff}.btn{display:inline-flex;text-decoration:none;border-radius:999px;border:1px solid var(--line);padding:11px 16px;color:#fff;background:linear-gradient(180deg,rgba(220,226,223,.12),rgba(0,60,34,.3));font-weight:900;margin-top:10px}footer{border-top:1px solid var(--line);padding:30px 0 80px;color:var(--muted);margin-top:40px}.legal{position:fixed;bottom:0;left:0;right:0;background:rgba(4,9,6,.94);border-top:1px solid var(--line);padding:8px 12px;text-align:center;color:var(--muted);font-size:.82rem}@media(max-width:860px){.grid{grid-template-columns:1fr}.logo{font-size:3.2rem}}
-  </style>
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<header><div class="container"><div class="logo-wrap"><div class="logo">BLOOMVAULT</div></div><nav><a href="index.html">Home</a><a href="seeds.html">Seeds</a><a class="active" href="journal.html">Journal</a><a href="about.html">About</a><a href="cart.html">Cart</a></nav></div></header>
+<header class="site-header"><div class="container"><div class="logo-wrap"><a href="index.html" aria-label="BloomVault Farms home"><img class="brand-logo" src="assets/img/logo-primary.svg" alt="BloomVault Farms"></a></div><nav class="main-nav"><a href="index.html">Home</a><a href="seeds.html">Seeds</a><a class="active" href="journal.html">Journal</a><a href="about.html">About</a><a href="cart.html">Cart</a></nav></div></header>
 <main class="container page">
   <div class="eyebrow">Field Notes From The Vault</div>
   <h1 class="page-title">JOURNAL</h1>
   <p class="lead">Breeding logs, preservation notes, strain spotlights, and behind-the-scenes updates from BloomVault Farms.</p>
-  <div class="grid">
-    <article class="post">
-      <span class="stamp">Featured Entry</span>
-      <h2>Building A Genetics Vault</h2>
+  <div class="grid two" style="margin-top:34px;grid-template-columns:1.25fr .75fr">
+    <article class="panel">
+      <span class="badge">Featured Entry</span>
+      <h2 class="section-title" style="margin-top:18px">Building A Genetics Vault</h2>
       <p class="muted">BloomVault is being built around a simple idea: every line should have a purpose, a story, and a recognizable terp identity.</p>
-      <h3>What We’re Chasing</h3>
+      <h3 style="color:var(--gold);margin-top:28px">What We’re Chasing</h3>
       <p>Our work centers on loud, memorable profiles: sour diesel, skunk funk, OG gas, citrus fuel, and dessert-heavy modern expressions. The goal is not just to make more names. The goal is to build releases with identity.</p>
-      <h3>Why Preservation Matters</h3>
-      <p>Some expressions are getting harder to find. Part of the BloomVault mission is to keep those profiles alive while still building toward marketable, modern seed releases.</p>
-      <h3>What Comes Next</h3>
+      <h3 style="color:var(--gold);margin-top:28px">Why Preservation Matters</h3>
+      <p>Some expressions are getting harder to find. Part of the BloomVault mission is to keep those profiles alive while still building toward marketable, modern releases.</p>
+      <h3 style="color:var(--gold);margin-top:28px">What Comes Next</h3>
       <p>Expect future entries covering parent selections, project goals, tester updates, naming notes, and release preparation.</p>
     </article>
-    <aside class="side-card">
-      <h2>Upcoming Notes</h2>
-      <div class="list">
-        <div class="mini"><strong>Triangle Kush Direction</strong><br><span class="muted">OG, gas, pine, structure, and pairing goals.</span></div>
-        <div class="mini"><strong>Skunk Preservation</strong><br><span class="muted">What real funk means for the BloomVault catalog.</span></div>
-        <div class="mini"><strong>Seed Production Logs</strong><br><span class="muted">Behind-the-scenes documentation of each run.</span></div>
+    <aside class="panel">
+      <h2 class="section-title">Upcoming Notes</h2>
+      <div class="grid" style="gap:14px">
+        <div class="card"><strong>Triangle Kush Direction</strong><br><span class="muted">OG, gas, pine, structure, and pairing goals.</span></div>
+        <div class="card"><strong>Skunk Preservation</strong><br><span class="muted">What real funk means for the BloomVault catalog.</span></div>
+        <div class="card"><strong>Seed Production Logs</strong><br><span class="muted">Behind-the-scenes documentation of each run.</span></div>
       </div>
-      <a class="btn" href="seeds.html">View Seeds</a>
+      <a class="btn" href="seeds.html" style="margin-top:16px">View Seeds</a>
     </aside>
   </div>
 </main>
-<footer><div class="container">BloomVault Farms — field notes, breeding logs, and vault updates.</div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
+<footer class="site-footer"><div class="container footer-inner"><img class="footer-logo" src="assets/img/logo-secondary.svg" alt="BloomVault Farms"><p>BloomVault Farms — field notes, breeding logs, and vault updates.</p></div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
 </body>
 </html>
