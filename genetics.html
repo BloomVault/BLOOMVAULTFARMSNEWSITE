@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genetics · BloomVault Farms</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="nav-backdrop" data-nav-backdrop></div>
+<header class="site-header"><div class="container header-row"><div class="logo-wrap"><a href="index.html" aria-label="BloomVault Farms home"><img class="brand-logo" src="assets/img/logo-primary.png" alt="BloomVault Farms"></a></div><button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" data-menu-toggle><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button><nav class="main-nav" data-main-nav><a href="index.html">Home</a><a class="active" href="genetics.html">Genetics</a><a href="journal.html">Journal</a><a href="about.html">About</a><a href="cart.html">Cart</a></nav></div></header>
+<main class="container page">
+  <div class="eyebrow">The Vault Catalog</div>
+  <h1 class="page-title">GENETICS</h1>
+  <p class="lead">Browse individual BloomVault selections by name, lineage direction, seed type, terp profile, release status, and price.</p>
+
+  <section class="catalog-toolbar" aria-label="Genetics filters and sorting">
+    <div class="catalog-control">
+      <label for="genetics-search">Search</label>
+      <input id="genetics-search" class="input" type="search" placeholder="Search strain or lineage" data-genetics-search>
+    </div>
+    <div class="catalog-control">
+      <label for="type-filter">Seed Type</label>
+      <select id="type-filter" data-filter="type">
+        <option value="all">All Types</option>
+        <option value="regular">Regular</option>
+        <option value="feminized">Feminized</option>
+      </select>
+    </div>
+    <div class="catalog-control">
+      <label for="terp-filter">Terp Profile</label>
+      <select id="terp-filter" data-filter="terp">
+        <option value="all">All Profiles</option>
+        <option value="gas">Gas</option>
+        <option value="diesel">Diesel</option>
+        <option value="skunk">Skunk</option>
+        <option value="og">OG</option>
+        <option value="dessert">Dessert</option>
+        <option value="citrus">Citrus</option>
+        <option value="kush">Kush</option>
+      </select>
+    </div>
+    <div class="catalog-control">
+      <label for="status-filter">Availability</label>
+      <select id="status-filter" data-filter="status">
+        <option value="all">All Availability</option>
+        <option value="coming-soon">Coming Soon</option>
+        <option value="vault-preview">Vault Preview</option>
+        <option value="limited">Limited</option>
+      </select>
+    </div>
+    <div class="catalog-control">
+      <label for="sort-select">Sort By</label>
+      <select id="sort-select" data-sort>
+        <option value="featured">Featured</option>
+        <option value="name-asc">Name A-Z</option>
+        <option value="name-desc">Name Z-A</option>
+        <option value="price-asc">Price Low to High</option>
+        <option value="price-desc">Price High to Low</option>
+      </select>
+    </div>
+    <button class="btn catalog-reset" type="button" data-reset-filters>Reset</button>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Current Vault Preview</h2>
+      <p class="muted catalog-count" data-result-count>Showing all genetics</p>
+    </div>
+    <div class="seed-grid" data-genetics-grid>
+      <article class="seed-card" data-name="Lemon Hazmat" data-lineage="Lemon Tree Triangle Kush" data-type="regular" data-terp="citrus og gas" data-status="coming-soon" data-price="45" data-featured="1"><div class="seed-art">LHZ</div><div class="seed-body"><h2>Lemon Hazmat</h2><p class="muted"><strong>Lineage:</strong> Lemon Tree × Triangle Kush</p><p class="muted">Sour lemon peel, OG gas, chemical citrus, and bright fuel-forward funk.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Citrus</span><span class="badge">OG</span><span class="badge">$45</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Hazard Sour" data-lineage="AJ Sour Diesel Triangle Kush" data-type="regular" data-terp="diesel gas og" data-status="vault-preview" data-price="50" data-featured="2"><div class="seed-art">HSD</div><div class="seed-body"><h2>Hazard Sour</h2><p class="muted"><strong>Lineage:</strong> AJ Sour Diesel × Triangle Kush</p><p class="muted">Sour diesel, chem bite, piney OG depth, and sharp fuel-heavy expression.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Diesel</span><span class="badge">Gas</span><span class="badge">$50</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Roadkill OG" data-lineage="Roadkill Skunk Triangle Kush" data-type="regular" data-terp="skunk og gas" data-status="limited" data-price="55" data-featured="3"><div class="seed-art">RKO</div><div class="seed-body"><h2>Roadkill OG</h2><p class="muted"><strong>Lineage:</strong> Roadkill Skunk × Triangle Kush</p><p class="muted">Skunk funk, OG gas, earthy bite, and old-school roadkill direction.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Skunk</span><span class="badge">OG</span><span class="badge">$55</span><span class="badge">Limited</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Cookie Crumble OG" data-lineage="Cookie Essence Triangle Kush" data-type="regular" data-terp="dessert og gas" data-status="limited" data-price="50" data-featured="4"><div class="seed-art">CRO</div><div class="seed-body"><h2>Cookie Crumble OG</h2><p class="muted"><strong>Lineage:</strong> Cookie Essence × Triangle Kush</p><p class="muted">Dough, cream, menthol cookie notes, and OG-backed gas structure.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Dessert</span><span class="badge">OG</span><span class="badge">$50</span><span class="badge">Limited</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Fuel Lock Cookies" data-lineage="Animal Cookies Triangle Kush" data-type="regular" data-terp="dessert gas og" data-status="coming-soon" data-price="45" data-featured="5"><div class="seed-art">FLC</div><div class="seed-body"><h2>Fuel Lock Cookies</h2><p class="muted"><strong>Lineage:</strong> Animal Cookies × Triangle Kush</p><p class="muted">Dense cookie funk, OG fuel, sweet dough, and heavy bag-appeal direction.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Dessert</span><span class="badge">Gas</span><span class="badge">$45</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Carbon Cake Kush" data-lineage="Carbon Crusher Triangle Kush" data-type="regular" data-terp="gas kush dessert" data-status="vault-preview" data-price="50" data-featured="6"><div class="seed-art">CCK</div><div class="seed-body"><h2>Carbon Cake Kush</h2><p class="muted"><strong>Lineage:</strong> Carbon Crusher × Triangle Kush</p><p class="muted">Dark gas, kush depth, sweet backend, and heavy resin-focused expression.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Gas</span><span class="badge">Kush</span><span class="badge">$50</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Cookie Essence S1" data-lineage="Cookie Essence reversed to itself" data-type="feminized" data-terp="dessert gas" data-status="coming-soon" data-price="65" data-featured="7"><div class="seed-art">CES1</div><div class="seed-body"><h2>Cookie Essence S1</h2><p class="muted"><strong>Lineage:</strong> Cookie Essence reversed to itself</p><p class="muted">In-house fem preservation of dessert, frost, cream, dough, and menthol-leaning expressions.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Dessert</span><span class="badge">$65</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Lemon Essence" data-lineage="Lemon Tree Cookie Essence" data-type="feminized" data-terp="citrus dessert" data-status="vault-preview" data-price="60" data-featured="8"><div class="seed-art">LCE</div><div class="seed-body"><h2>Lemon Essence</h2><p class="muted"><strong>Lineage:</strong> Lemon Tree × Cookie Essence</p><p class="muted">Lemon cream, cookie dough, citrus icing, and smooth dessert-fuel character.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Citrus</span><span class="badge">Dessert</span><span class="badge">$60</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+      <article class="seed-card" data-name="Sour Cookie Essence" data-lineage="AJ Sour Diesel Cookie Essence" data-type="feminized" data-terp="diesel dessert gas" data-status="vault-preview" data-price="60" data-featured="9"><div class="seed-art">SCE</div><div class="seed-body"><h2>Sour Cookie Essence</h2><p class="muted"><strong>Lineage:</strong> AJ Sour Diesel × Cookie Essence</p><p class="muted">Sour fuel, cookie cream, sharp diesel lift, and frosty modern structure.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Diesel</span><span class="badge">Dessert</span><span class="badge">$60</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
+    </div>
+    <div class="empty catalog-empty" data-empty-state hidden>No genetics match those filters yet.</div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><img class="footer-logo va-footer-logo" src="assets/img/va-bvf.png" alt="BloomVault Farms Virginia logo"><p>BloomVault Farms — collector genetics archive.</p></div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
