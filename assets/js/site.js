@@ -1,3 +1,8 @@
+const headerFix = document.createElement('link');
+headerFix.rel = 'stylesheet';
+headerFix.href = 'assets/css/header-fix.css';
+document.head.appendChild(headerFix);
+
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const mainNav = document.querySelector('[data-main-nav]');
 const navBackdrop = document.querySelector('[data-nav-backdrop]');
