@@ -1,18 +1,20 @@
 const headerTune = document.createElement('style');
 headerTune.textContent = `
-  .header-row{min-height:70px!important;height:70px!important}
-  .brand-logo{width:clamp(170px,20vw,270px)!important}
-  .menu-toggle{padding:13px 16px!important}
-  .menu-icon span{width:26px!important;height:2px!important}
+  .header-row{min-height:84px!important;height:84px!important;overflow:visible!important}
+  .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:visible!important}
+  .brand-logo{width:clamp(190px,22vw,320px)!important;max-height:76px!important;height:auto!important;object-fit:contain!important}
+  .menu-toggle{min-height:54px!important;padding:14px 18px!important;font-size:1rem!important}
+  .menu-icon span{width:28px!important;height:2px!important}
   @media(max-width:860px){
-    .header-row{min-height:68px!important;height:68px!important}
-    .brand-logo{width:178px!important}
+    .header-row{min-height:78px!important;height:78px!important}
+    .brand-logo{width:190px!important;max-height:68px!important}
+    .menu-toggle{min-height:52px!important;padding:13px 16px!important}
   }
   @media(max-width:560px){
-    .header-row{min-height:64px!important;height:64px!important;grid-template-columns:54px 1fr 54px!important}
-    .brand-logo{width:156px!important}
-    .menu-toggle{width:48px!important;height:48px!important;padding:0!important}
-    .menu-icon span{width:24px!important}
+    .header-row{min-height:74px!important;height:74px!important;grid-template-columns:58px 1fr 58px!important}
+    .brand-logo{width:170px!important;max-height:62px!important}
+    .menu-toggle{width:52px!important;height:52px!important;min-height:52px!important;padding:0!important;justify-content:center!important}
+    .menu-icon span{width:26px!important}
   }
 `;
 document.head.appendChild(headerTune);
