@@ -1,3 +1,22 @@
+const headerTune = document.createElement('style');
+headerTune.textContent = `
+  .header-row{min-height:70px!important;height:70px!important}
+  .brand-logo{width:clamp(170px,20vw,270px)!important}
+  .menu-toggle{padding:13px 16px!important}
+  .menu-icon span{width:26px!important;height:2px!important}
+  @media(max-width:860px){
+    .header-row{min-height:68px!important;height:68px!important}
+    .brand-logo{width:178px!important}
+  }
+  @media(max-width:560px){
+    .header-row{min-height:64px!important;height:64px!important;grid-template-columns:54px 1fr 54px!important}
+    .brand-logo{width:156px!important}
+    .menu-toggle{width:48px!important;height:48px!important;padding:0!important}
+    .menu-icon span{width:24px!important}
+  }
+`;
+document.head.appendChild(headerTune);
+
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const mainNav = document.querySelector('[data-main-nav]');
 const navBackdrop = document.querySelector('[data-nav-backdrop]');
