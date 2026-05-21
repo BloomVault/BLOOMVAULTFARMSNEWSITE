@@ -1,18 +1,19 @@
 const headerTune = document.createElement('style');
 headerTune.textContent = `
-  .header-row{min-height:118px!important;height:118px!important;overflow:hidden!important}
+  .header-row{min-height:168px!important;height:168px!important;overflow:hidden!important}
   .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
-  .brand-logo{height:108px!important;width:auto!important;max-width:min(72vw,900px)!important;object-fit:contain!important;display:block!important}
-  .menu-toggle{min-height:64px!important;padding:17px 24px!important;font-size:1.08rem!important}
-  .menu-icon span{width:32px!important;height:2px!important}
+  .brand-logo{height:154px!important;width:auto!important;max-width:min(78vw,1200px)!important;object-fit:contain!important;display:block!important}
+  .menu-toggle{min-height:74px!important;padding:20px 28px!important;font-size:1.15rem!important}
+  .menu-icon span{width:36px!important;height:2px!important}
   @media(max-width:860px){
-    .header-row{min-height:102px!important;height:102px!important;overflow:hidden!important}
-    .brand-logo{height:92px!important;width:auto!important;max-width:64vw!important}
-    .menu-toggle{min-height:60px!important;padding:15px 20px!important}
+    .header-row{min-height:112px!important;height:112px!important;overflow:hidden!important}
+    .brand-logo{height:100px!important;width:auto!important;max-width:66vw!important}
+    .menu-toggle{min-height:62px!important;padding:15px 20px!important}
+    .menu-icon span{width:30px!important}
   }
   @media(max-width:560px){
-    .header-row{min-height:92px!important;height:92px!important;grid-template-columns:64px minmax(0,1fr) 64px!important;overflow:hidden!important}
-    .brand-logo{height:82px!important;width:auto!important;max-width:58vw!important}
+    .header-row{min-height:94px!important;height:94px!important;grid-template-columns:64px minmax(0,1fr) 64px!important;overflow:hidden!important}
+    .brand-logo{height:84px!important;width:auto!important;max-width:58vw!important}
     .menu-toggle{width:58px!important;height:58px!important;min-height:58px!important;padding:0!important;justify-content:center!important}
     .menu-icon span{width:29px!important}
   }
