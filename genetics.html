@@ -16,79 +16,30 @@
   <p class="lead">Browse upcoming BloomVault selections by lineage, seed type, terp direction, release status, and price.</p>
 
   <section class="catalog-toolbar" aria-label="Genetics filters and sorting">
-    <div class="catalog-control">
-      <label for="genetics-search">Search</label>
-      <input id="genetics-search" class="input" type="search" placeholder="Search strain or lineage" data-genetics-search>
-    </div>
-    <div class="catalog-control">
-      <label for="type-filter">Seed Type</label>
-      <select id="type-filter" data-filter="type">
-        <option value="all">All Types</option>
-        <option value="regular">Regular</option>
-        <option value="feminized">Feminized</option>
-      </select>
-    </div>
-    <div class="catalog-control">
-      <label for="terp-filter">Terp Profile</label>
-      <select id="terp-filter" data-filter="terp">
-        <option value="all">All Profiles</option>
-        <option value="gas">Gas</option>
-        <option value="diesel">Diesel</option>
-        <option value="og">OG</option>
-        <option value="dessert">Dessert</option>
-        <option value="citrus">Citrus</option>
-        <option value="berry">Berry</option>
-        <option value="kush">Kush</option>
-      </select>
-    </div>
-    <div class="catalog-control">
-      <label for="status-filter">Availability</label>
-      <select id="status-filter" data-filter="status">
-        <option value="all">All Availability</option>
-        <option value="coming-soon">Coming Soon</option>
-        <option value="vault-preview">Vault Preview</option>
-        <option value="limited">Limited</option>
-      </select>
-    </div>
-    <div class="catalog-control">
-      <label for="sort-select">Sort By</label>
-      <select id="sort-select" data-sort>
-        <option value="featured">Featured</option>
-        <option value="name-asc">Name A-Z</option>
-        <option value="name-desc">Name Z-A</option>
-        <option value="price-asc">Price Low to High</option>
-        <option value="price-desc">Price High to Low</option>
-      </select>
-    </div>
+    <div class="catalog-control"><label for="genetics-search">Search</label><input id="genetics-search" class="input" type="search" placeholder="Search strain or lineage" data-genetics-search></div>
+    <div class="catalog-control"><label for="type-filter">Seed Type</label><select id="type-filter" data-filter="type"><option value="all">All Types</option><option value="regular">Regular</option><option value="feminized">Feminized</option></select></div>
+    <div class="catalog-control"><label for="terp-filter">Terp Profile</label><select id="terp-filter" data-filter="terp"><option value="all">All Profiles</option><option value="gas">Gas</option><option value="diesel">Diesel</option><option value="og">OG</option><option value="dessert">Dessert</option><option value="citrus">Citrus</option><option value="berry">Berry</option><option value="kush">Kush</option></select></div>
+    <div class="catalog-control"><label for="status-filter">Availability</label><select id="status-filter" data-filter="status"><option value="all">All Availability</option><option value="coming-soon">Coming Soon</option><option value="vault-preview">Vault Preview</option><option value="limited">Limited</option></select></div>
+    <div class="catalog-control"><label for="sort-select">Sort By</label><select id="sort-select" data-sort><option value="featured">Featured</option><option value="name-asc">Name A-Z</option><option value="name-desc">Name Z-A</option><option value="price-asc">Price Low to High</option><option value="price-desc">Price High to Low</option></select></div>
     <button class="btn catalog-reset" type="button" data-reset-filters>Reset</button>
   </section>
 
   <section class="section">
-    <div class="section-head">
-      <h2 class="section-title">Upcoming Vault Releases</h2>
-      <p class="muted catalog-count" data-result-count>Showing all genetics</p>
-    </div>
+    <div class="section-head"><h2 class="section-title">Upcoming Vault Releases</h2><p class="muted catalog-count" data-result-count>Showing all genetics</p></div>
     <div class="seed-grid" data-genetics-grid>
       <article class="seed-card" data-name="Lemon Tree x Triangle Kush" data-lineage="Lemon Tree Triangle Kush" data-type="regular" data-terp="citrus og gas kush" data-status="coming-soon" data-price="45" data-featured="1"><div class="seed-art">LT×TK</div><div class="seed-body"><h2>Lemon Tree × Triangle Kush</h2><p class="muted"><strong>Type:</strong> Regular seeds</p><p class="muted">Sharp lemon peel, sour citrus, OG gas, and Triangle Kush backbone for structure and depth.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Citrus</span><span class="badge">OG</span><span class="badge">$45</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Carbon Crusher x Triangle Kush" data-lineage="Carbon Crusher Triangle Kush" data-type="regular" data-terp="gas kush dessert og" data-status="coming-soon" data-price="45" data-featured="2"><div class="seed-art">CC×TK</div><div class="seed-body"><h2>Carbon Crusher × Triangle Kush</h2><p class="muted"><strong>Type:</strong> Regular seeds</p><p class="muted">Dark gas, kush weight, sweet backend, and heavier resin-focused structure from the TK pairing.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Gas</span><span class="badge">Kush</span><span class="badge">$45</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Sour Diesel x Triangle Kush" data-lineage="Sour Diesel AJ Sour Diesel Triangle Kush" data-type="regular" data-terp="diesel gas og" data-status="vault-preview" data-price="50" data-featured="3"><div class="seed-art">SD×TK</div><div class="seed-body"><h2>Sour Diesel × Triangle Kush</h2><p class="muted"><strong>Type:</strong> Regular seeds</p><p class="muted">Sour diesel lift, chem-fuel edge, piney OG depth, and a sharp gas-forward BloomVault direction.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Diesel</span><span class="badge">Gas</span><span class="badge">$50</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Animal Cookies x Triangle Kush" data-lineage="Animal Cookies Triangle Kush" data-type="regular" data-terp="dessert gas og" data-status="coming-soon" data-price="45" data-featured="4"><div class="seed-art">AC×TK</div><div class="seed-body"><h2>Animal Cookies × Triangle Kush</h2><p class="muted"><strong>Type:</strong> Regular seeds</p><p class="muted">Dense cookie funk, sweet dough, OG fuel, and a heavier modern gas profile.</p><div class="badges"><span class="badge">Regular</span><span class="badge">Dessert</span><span class="badge">Gas</span><span class="badge">$45</span><span class="badge">Coming Soon</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Wildberry Frosting S1" data-lineage="Wildberry Frosting secret lineage selfed S1" data-type="feminized" data-terp="berry dessert gas" data-status="limited" data-price="65" data-featured="5"><div class="seed-art">WBF S1</div><div class="seed-body"><h2>Wildberry Frosting S1</h2><p class="muted"><strong>Type:</strong> Feminized seeds</p><p class="muted"><strong>Lineage:</strong> Vault-sealed house selection</p><p class="muted">A selfed release from a guarded BloomVault selection with sweet berry frosting, creamy dessert notes, and private in-house lineage kept sealed in the vault.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Berry</span><span class="badge">Dessert</span><span class="badge">$65</span><span class="badge">Limited</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Sour Diesel x Wildberry Frosting" data-lineage="Sour Diesel Wildberry Frosting reversed pollen" data-type="feminized" data-terp="diesel berry dessert gas" data-status="vault-preview" data-price="60" data-featured="6"><div class="seed-art">SD×WBF</div><div class="seed-body"><h2>Sour Diesel × Wildberry Frosting</h2><p class="muted"><strong>Type:</strong> Feminized seeds</p><p class="muted">Sour fuel and diesel brightness crossed into sweet berry frosting and creamy dessert depth.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Diesel</span><span class="badge">Berry</span><span class="badge">$60</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Lemon Tree x Wildberry Frosting" data-lineage="Lemon Tree Wildberry Frosting reversed pollen" data-type="feminized" data-terp="citrus berry dessert" data-status="vault-preview" data-price="60" data-featured="7"><div class="seed-art">LT×WBF</div><div class="seed-body"><h2>Lemon Tree × Wildberry Frosting</h2><p class="muted"><strong>Type:</strong> Feminized seeds</p><p class="muted">Lemon cream, citrus icing, berry frosting, and a sweeter dessert-citrus profile.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Citrus</span><span class="badge">Berry</span><span class="badge">$60</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
-
       <article class="seed-card" data-name="Carbon Crusher x Wildberry Frosting" data-lineage="Carbon Crusher Wildberry Frosting reversed pollen" data-type="feminized" data-terp="gas berry dessert kush" data-status="vault-preview" data-price="60" data-featured="8"><div class="seed-art">CC×WBF</div><div class="seed-body"><h2>Carbon Crusher × Wildberry Frosting</h2><p class="muted"><strong>Type:</strong> Feminized seeds</p><p class="muted">Dark gas and resin-heavy depth paired with berry frosting, cream, and sweet backend potential.</p><div class="badges"><span class="badge">Feminized</span><span class="badge">Gas</span><span class="badge">Berry</span><span class="badge">$60</span><span class="badge">Vault Preview</span></div><a class="btn" href="cart.html">Join Waitlist</a></div></article>
     </div>
     <div class="empty catalog-empty" data-empty-state hidden>No genetics match those filters yet.</div>
   </section>
 </main>
-<footer class="site-footer"><div class="container footer-inner"><img class="footer-logo va-footer-logo" src="assets/img/va-bvf.png" alt="BloomVault Farms Virginia logo"><p>BloomVault Farms — collector genetics archive.</p></div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
+<footer class="site-footer"><div class="container footer-inner"><img class="footer-logo va-footer-logo" src="assets/img/va-bvf.png" alt="BloomVault Farms Virginia logo"><p>BloomVault Farms — Virginia based genetics preservation and breeding.</p></div></footer><div class="legal">For souvenir and genetic preservation purposes only. Must comply with local laws and regulations.</div>
 <script src="assets/js/site.js"></script>
 </body>
 </html>
