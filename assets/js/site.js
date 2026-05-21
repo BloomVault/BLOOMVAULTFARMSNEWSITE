@@ -1,30 +1,3 @@
-const headerTune = document.createElement('style');
-headerTune.textContent = `
-  .site-header{overflow:visible!important;z-index:1000!important}
-  .header-row{min-height:168px!important;height:168px!important;overflow:visible!important}
-  .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;pointer-events:auto!important}
-  .brand-logo{height:164px!important;width:auto!important;max-width:min(82vw,1300px)!important;object-fit:contain!important;display:block!important}
-  .menu-toggle{width:auto!important;height:auto!important;min-height:44px!important;padding:9px 13px!important;font-size:.86rem!important;line-height:1!important;position:relative!important;z-index:1002!important;pointer-events:auto!important}
-  .menu-icon{gap:4px!important}
-  .menu-icon span{width:21px!important;height:2px!important}
-  .main-nav{z-index:1003!important;top:calc(100% + 10px)!important;right:0!important;left:auto!important;pointer-events:none!important}
-  .main-nav.open{pointer-events:auto!important}
-  .nav-backdrop{z-index:900!important}
-  @media(max-width:860px){
-    .header-row{min-height:112px!important;height:112px!important;overflow:visible!important}
-    .brand-logo{height:108px!important;width:auto!important;max-width:68vw!important}
-    .menu-toggle{min-height:46px!important;padding:10px 13px!important;font-size:.86rem!important}
-    .menu-icon span{width:22px!important}
-  }
-  @media(max-width:560px){
-    .header-row{min-height:94px!important;height:94px!important;grid-template-columns:58px minmax(0,1fr) 58px!important;overflow:visible!important}
-    .brand-logo{height:90px!important;width:auto!important;max-width:62vw!important}
-    .menu-toggle{width:48px!important;height:48px!important;min-height:48px!important;padding:0!important;justify-content:center!important}
-    .menu-icon span{width:23px!important}
-  }
-`;
-document.head.appendChild(headerTune);
-
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const mainNav = document.querySelector('[data-main-nav]');
 const navBackdrop = document.querySelector('[data-nav-backdrop]');
