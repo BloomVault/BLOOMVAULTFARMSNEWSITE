@@ -1,17 +1,20 @@
 const headerTune = document.createElement('style');
 headerTune.textContent = `
-  .site-header{overflow:visible!important}
+  .site-header{overflow:visible!important;z-index:1000!important}
   .header-row{min-height:168px!important;height:168px!important;overflow:visible!important}
-  .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
+  .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;pointer-events:auto!important}
   .brand-logo{height:164px!important;width:auto!important;max-width:min(82vw,1300px)!important;object-fit:contain!important;display:block!important}
-  .menu-toggle{min-height:52px!important;padding:12px 16px!important;font-size:.95rem!important}
-  .menu-icon span{width:24px!important;height:2px!important}
-  .main-nav{z-index:100!important;top:calc(100% + 10px)!important}
+  .menu-toggle{width:auto!important;height:auto!important;min-height:44px!important;padding:9px 13px!important;font-size:.86rem!important;line-height:1!important;position:relative!important;z-index:1002!important;pointer-events:auto!important}
+  .menu-icon{gap:4px!important}
+  .menu-icon span{width:21px!important;height:2px!important}
+  .main-nav{z-index:1003!important;top:calc(100% + 10px)!important;right:0!important;left:auto!important;pointer-events:none!important}
+  .main-nav.open{pointer-events:auto!important}
+  .nav-backdrop{z-index:900!important}
   @media(max-width:860px){
     .header-row{min-height:112px!important;height:112px!important;overflow:visible!important}
     .brand-logo{height:108px!important;width:auto!important;max-width:68vw!important}
-    .menu-toggle{min-height:50px!important;padding:11px 14px!important;font-size:.92rem!important}
-    .menu-icon span{width:24px!important}
+    .menu-toggle{min-height:46px!important;padding:10px 13px!important;font-size:.86rem!important}
+    .menu-icon span{width:22px!important}
   }
   @media(max-width:560px){
     .header-row{min-height:94px!important;height:94px!important;grid-template-columns:58px minmax(0,1fr) 58px!important;overflow:visible!important}
@@ -43,7 +46,9 @@ function openMenu() {
 }
 
 if (menuToggle && mainNav && navBackdrop) {
-  menuToggle.addEventListener('click', () => {
+  menuToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
     expanded ? closeMenu() : openMenu();
   });
