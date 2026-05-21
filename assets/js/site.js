@@ -1,21 +1,23 @@
 const headerTune = document.createElement('style');
 headerTune.textContent = `
-  .header-row{min-height:168px!important;height:168px!important;overflow:hidden!important}
+  .site-header{overflow:visible!important}
+  .header-row{min-height:168px!important;height:168px!important;overflow:visible!important}
   .logo-wrap{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
-  .brand-logo{height:154px!important;width:auto!important;max-width:min(78vw,1200px)!important;object-fit:contain!important;display:block!important}
-  .menu-toggle{min-height:74px!important;padding:20px 28px!important;font-size:1.15rem!important}
-  .menu-icon span{width:36px!important;height:2px!important}
+  .brand-logo{height:164px!important;width:auto!important;max-width:min(82vw,1300px)!important;object-fit:contain!important;display:block!important}
+  .menu-toggle{min-height:52px!important;padding:12px 16px!important;font-size:.95rem!important}
+  .menu-icon span{width:24px!important;height:2px!important}
+  .main-nav{z-index:100!important;top:calc(100% + 10px)!important}
   @media(max-width:860px){
-    .header-row{min-height:112px!important;height:112px!important;overflow:hidden!important}
-    .brand-logo{height:100px!important;width:auto!important;max-width:66vw!important}
-    .menu-toggle{min-height:62px!important;padding:15px 20px!important}
-    .menu-icon span{width:30px!important}
+    .header-row{min-height:112px!important;height:112px!important;overflow:visible!important}
+    .brand-logo{height:108px!important;width:auto!important;max-width:68vw!important}
+    .menu-toggle{min-height:50px!important;padding:11px 14px!important;font-size:.92rem!important}
+    .menu-icon span{width:24px!important}
   }
   @media(max-width:560px){
-    .header-row{min-height:94px!important;height:94px!important;grid-template-columns:64px minmax(0,1fr) 64px!important;overflow:hidden!important}
-    .brand-logo{height:84px!important;width:auto!important;max-width:58vw!important}
-    .menu-toggle{width:58px!important;height:58px!important;min-height:58px!important;padding:0!important;justify-content:center!important}
-    .menu-icon span{width:29px!important}
+    .header-row{min-height:94px!important;height:94px!important;grid-template-columns:58px minmax(0,1fr) 58px!important;overflow:visible!important}
+    .brand-logo{height:90px!important;width:auto!important;max-width:62vw!important}
+    .menu-toggle{width:48px!important;height:48px!important;min-height:48px!important;padding:0!important;justify-content:center!important}
+    .menu-icon span{width:23px!important}
   }
 `;
 document.head.appendChild(headerTune);
