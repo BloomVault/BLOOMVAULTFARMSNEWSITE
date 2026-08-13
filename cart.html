@@ -14,7 +14,7 @@
 <main class="container page">
 <div class="eyebrow">Your Saved Genetics</div>
 <h1 class="page-title">THE VAULT</h1>
-<p class="lead">Review the genetics and quantities you saved, then send BloomVault an availability request. No payment is collected and no purchase is completed on this site.</p>
+<p class="lead">Review and edit the genetics and quantities you saved. Your Vault stays saved in this browser until you remove items.</p>
 <div class="cart-layout">
 <section class="panel">
 <h2 class="section-title">Saved Selections</h2>
@@ -22,22 +22,21 @@
 <div class="cart-empty" data-vault-empty>Your Vault is empty. <a href="genetics.html">Browse available genetics</a>.</div>
 </section>
 <aside class="panel cart-summary">
-<h2 class="section-title">Send Your Vault</h2>
-<div class="cart-total-row"><span>Total packs selected</span><strong data-vault-count>0</strong></div>
-<p class="cart-note">This is an availability inquiry only. BloomVault will review your selections and contact you separately.</p>
-<form class="order-form" data-vault-form action="https://formsubmit.co/bloomvaultfarms@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="New BloomVault Vault Request">
+<h2 class="section-title">Contact BloomVault</h2>
+<div class="cart-total-row"><span>Total packs saved</span><strong data-vault-count>0</strong></div>
+<p class="cart-note">Use this form for a general availability inquiry. Your saved Vault selections remain stored locally in your browser.</p>
+<form class="order-form" action="https://formsubmit.co/bloomvaultfarms@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New BloomVault Availability Inquiry">
 <input type="hidden" name="_template" value="table">
-<input type="hidden" name="Vault Selections" value="" data-vault-summary>
 <label>Name<input type="text" name="Name" required autocomplete="name"></label>
 <label>Email<input type="email" name="Email" required autocomplete="email"></label>
 <label>City<input type="text" name="City" autocomplete="address-level2"></label>
 <label>State / Region<input type="text" name="State / Region" autocomplete="address-level1"></label>
 <label>ZIP / Postal Code<input type="text" name="ZIP / Postal Code" autocomplete="postal-code"></label>
 <label>Notes<textarea name="Notes" placeholder="Anything you want BloomVault to know"></textarea></label>
-<button class="btn primary" type="submit">Submit Vault Request</button>
+<button class="btn primary" type="submit">Submit Inquiry</button>
 </form>
-<p class="cart-note">The first submission may trigger a one-time confirmation email from the form service before future requests are forwarded.</p>
+<p class="cart-note">FormSubmit requires a one-time email confirmation the first time this address receives a form submission. After confirmation, future inquiries are forwarded to bloomvaultfarms@gmail.com.</p>
 </aside>
 </div>
 </main>
