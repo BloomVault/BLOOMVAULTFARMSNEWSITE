@@ -2,6 +2,9 @@ const menuToggle = document.querySelector('[data-menu-toggle]');
 const mainNav = document.querySelector('[data-main-nav]');
 const navBackdrop = document.querySelector('[data-nav-backdrop]');
 
+// Journal has been removed from the site. Strip any legacy nav links sitewide.
+document.querySelectorAll('a[href="journal.html"]').forEach((link) => link.remove());
+
 function closeMenu() {
   if (!menuToggle || !mainNav || !navBackdrop) return;
   menuToggle.setAttribute('aria-expanded', 'false');
