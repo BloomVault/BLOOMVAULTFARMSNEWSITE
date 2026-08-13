@@ -1,1 +1,1 @@
-.seed-art.has-image{padding:0;background:#020503;overflow:hidden}.seed-art.has-image:after{display:none}.seed-art.has-image img{width:100%;height:100%;object-fit:cover;display:block}
+.seed-art.has-image{padding:0;background:#020503;overflow:hidden;display:grid;place-items:center}.seed-art.has-image:after{display:none}.seed-art.has-image img{width:100%;height:100%;object-fit:contain;display:block;background:#020503}
