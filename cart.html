@@ -26,9 +26,7 @@
 <div style="border-top:1px solid var(--line);padding-top:24px">
 <h3 style="margin:0 0 8px">Contact Information</h3>
 <p class="cart-note">Use this form for a general collector-item availability inquiry. Your saved Vault selections remain stored locally in your browser.</p>
-<form class="order-form" action="https://formsubmit.co/bloomvaultfarms@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="New BloomVault Collector Item Inquiry">
-<input type="hidden" name="_template" value="table">
+<form class="order-form" data-contact-form>
 <label>Name<input type="text" name="Name" required autocomplete="name"></label>
 <label>Email<input type="email" name="Email" required autocomplete="email"></label>
 <label>Address<input type="text" name="Address" autocomplete="street-address"></label>
@@ -36,9 +34,10 @@
 <label>State / Region<input type="text" name="State / Region" autocomplete="address-level1"></label>
 <label>ZIP / Postal Code<input type="text" name="ZIP / Postal Code" autocomplete="postal-code"></label>
 <label>Notes<textarea name="Notes" placeholder="Anything you want BloomVault to know"></textarea></label>
-<button class="btn primary" type="submit">Submit Inquiry</button>
+<button class="btn primary" type="submit" data-contact-submit>Submit Inquiry</button>
+<div class="cart-note" data-contact-status aria-live="polite"></div>
 </form>
-<p class="cart-note">FormSubmit requires a one-time email confirmation the first time this address receives a form submission. After confirmation, future inquiries are forwarded to bloomvaultfarms@gmail.com.</p>
+<p class="cart-note">If this is the first submission, FormSubmit will send a one-time activation email to bloomvaultfarms@gmail.com. That activation must be confirmed before submissions are forwarded to the inbox.</p>
 </div>
 </section>
 </main>
